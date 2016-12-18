@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url('../assets/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.container {
+   height: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.key {
+	background-color: rgba(10,10,10,.3);
+	color: #fff;
+	display: inline-block;
+	min-width: 60px;
+	height: 50px;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 0 5px;
+}
+
+.key span {
+	display: block;
+	text-align: center;
+}
+
+.letter {
+	font-weight: bold;
+}
+
+.instrument {
+	font-size: 50%;
+}
