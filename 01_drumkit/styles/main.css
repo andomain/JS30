@@ -4,16 +4,19 @@
 
 html,
 body {
-	height: 100%;
-	width: 100%;
-	margin: 0;
-	padding: 0;
+
 }
 
+html,
 body {
 	background-image: url('../assets/background.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
 }
 
 .container {
@@ -30,19 +33,20 @@ body {
 	color: #fff;
 	display: inline-block;
 	font-size: 16px;
-	min-width: 60px;
+	min-width: 65px;
 	height: 50px;
 	border: 1px solid black;
 	border-radius: 5px;
 	margin: 0 5px;
+	transition: all .05s linear;
 }
 
 .key.play {
-		border-color: yellow;
-		height: 52px;
-		width: 52px;
-		font-size: 125%;
-	}
+	background-color: rgba(10,10,10,.6);
+	border-color: yellow;
+	border-width: 2px;
+	font-size: 125%;
+}
 
 .key span {
 	display: block;
