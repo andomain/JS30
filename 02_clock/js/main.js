@@ -18,15 +18,15 @@ function updateClock(hands){
 	}
 
 	updateHand(hands.hour, time.hours, 30);
-	updateHand(hands.minute, time.minutes, 6);
-	updateHand(hands.second, time.seconds, 6);	
+	updateHand(hands.minute, time.minutes);
+	updateHand(hands.second, time.seconds);	
 }
 
 function resetTransition(hand,limit){
 	hand.style.transition = limit ? 'inherit' : 'none';
 }
 
-function updateHand(hand, time, interval) {
+function updateHand(hand, time, interval=6) {
 	resetTransition(hand, time);
 	hand.style.transform = `rotate(${((90 + (time * interval)))}deg)`;
 }
