@@ -7,7 +7,9 @@ function keyDownHandler(e){
 		audio.currentTime = 0; // Rewind
 		audio.play();
 	}
-	key.classList.add('play');
+	// Fix issue where if key is held down the play class sticks
+	if(!hasClass(key, 'play'))
+		key.classList.add('play');
 }
 
 function transitionEndHandler(e){
@@ -22,3 +24,7 @@ window.onload = function(){
 	keys.forEach(key => key.addEventListener('transitionend', transitionEndHandler));
 }
 window.addEventListener("keydown", keyDownHandler);
+
+function hasClass(element, cls) {
+    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+}
