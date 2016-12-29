@@ -1,11 +1,14 @@
 window.onload = function() {
-	updateClock();
-
-	var update = window.setInterval(updateClock,1000);
-
+	const hands = {
+		'hour': document.querySelector(`.hour-hand`),
+		'minute': document.querySelector(`.minute-hand`),
+		'second': document.querySelector(`.second-hand`)
+	}
+	updateClock(hands);
+	var update = window.setInterval(updateClock,1000, hands);
 }
 
-function updateClock(){
+function updateClock(hands){
 	const now = new Date;
 
 	const time = {
@@ -14,12 +17,8 @@ function updateClock(){
 		'hours'  : now.getHours()
 	}
 
-	//Set hours
-	const hourHand = document.querySelector(`.hour-hand`);	
-	hourHand.style.transform = "rotate(" + (90 + (time.hours * 30)) +"deg)";
-	const minuteHand = document.querySelector(`.minute-hand`);	
-	minuteHand.style.transform = "rotate(" + (90 + (time.minutes * 6)) +"deg)";
-	const secondHand = document.querySelector(`.second-hand`);
-	secondHand.style.transform = "rotate(" + (90 + (time.seconds * 6)) +"deg)";
+	hands.hour.style.transform   = `rotate(${((90 + (time.hours * 30)))}deg)`;
+	hands.minute.style.transform = `rotate(${((90 + (time.minutes * 6)))}deg)`;
+	hands.second.style.transform = `rotate(${((90 + (time.seconds * 6)))}deg)`;
 
 }
