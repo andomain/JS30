@@ -1,20 +1,25 @@
 window.onload = function() {
-	var now = new Date;
-	var seconds = now.getSeconds();
-	var minutes = now.getMinutes();
-	var hours = now.getHours();
+	updateClock();
 
-	console.log(hours + ' ' + minutes + ' ' + seconds);
+	var update = window.setInterval(updateClock,1000);
 
-	// sanitize hourse
-	if(hours >= 12) hours -= 12;
+}
+
+function updateClock(){
+	const now = new Date;
+
+	const time = {
+		'seconds': now.getSeconds(),
+		'minutes': now.getMinutes(),
+		'hours'  : now.getHours()
+	}
 
 	//Set hours
 	const hourHand = document.querySelector(`.hour-hand`);	
-	hourHand.style.transform = "rotate(" + (90 + (hours * 30)) +"deg)";
+	hourHand.style.transform = "rotate(" + (90 + (time.hours * 30)) +"deg)";
 	const minuteHand = document.querySelector(`.minute-hand`);	
-	minuteHand.style.transform = "rotate(" + (90 + (minutes * 6)) +"deg)";
+	minuteHand.style.transform = "rotate(" + (90 + (time.minutes * 6)) +"deg)";
 	const secondHand = document.querySelector(`.second-hand`);
-	secondHand.style.transform = "rotate(" + (90 + (seconds * 6)) +"deg)";
+	secondHand.style.transform = "rotate(" + (90 + (time.seconds * 6)) +"deg)";
 
 }
