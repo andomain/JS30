@@ -37,6 +37,7 @@ body {
 }
 
 .hand {
+	border-radius: 5px;
 	width: 50%;
 	height: 6px;
 	background: black;
@@ -46,3 +47,8 @@ body {
   	transform-origin: 100%;
   	transition: all 0.5s;
 }
+
+.hand.second-hand {
+	opacity:.5;
+}
+
