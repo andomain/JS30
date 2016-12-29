@@ -17,15 +17,16 @@ function updateClock(hands){
 		'hours'  : now.getHours()
 	}
 
-	resetTransition(hands.hour, time.hours==0);
-	resetTransition(hands.minute, time.minutes==0);
-	resetTransition(hands.second, time.seconds==0);
-
-	hands.hour.style.transform   = `rotate(${((90 + (time.hours * 30)))}deg)`;
-	hands.minute.style.transform = `rotate(${((90 + (time.minutes * 6)))}deg)`;
-	hands.second.style.transform = `rotate(${((90 + (time.seconds * 6)))}deg)`;
+	updateHand(hands.hour, time.hours, 30);
+	updateHand(hands.minute, time.minutes, 6);
+	updateHand(hands.second, time.seconds, 6);	
 }
 
 function resetTransition(hand,limit){
-	hand.style.transition = limit ? 'none' : 'inherit';
+	hand.style.transition = limit ? 'inherit' : 'none';
+}
+
+function updateHand(hand, time, interval) {
+	resetTransition(hand, time);
+	hand.style.transform = `rotate(${((90 + (time * interval)))}deg)`;
 }
