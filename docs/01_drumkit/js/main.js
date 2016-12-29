@@ -8,8 +8,9 @@ function keyDownHandler(e){
 		audio.play();
 	}
 	// Fix issue where if key is held down the play class sticks
-	if(!hasClass(key, 'play'))
+	if(!hasClass(key, 'play')){
 		key.classList.add('play');
+	}
 }
 
 function transitionEndHandler(e){
@@ -19,12 +20,13 @@ function transitionEndHandler(e){
 	}
 }
 
+function hasClass(element, cls) {
+    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+}
+
 window.onload = function(){
 	const keys = document.querySelectorAll('.key');
 	keys.forEach(key => key.addEventListener('transitionend', transitionEndHandler));
 }
-window.addEventListener("keydown", keyDownHandler);
 
-function hasClass(element, cls) {
-    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
-}
+window.addEventListener("keydown", keyDownHandler);
