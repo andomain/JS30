@@ -7,3 +7,6 @@
 
 ## 02 : JS & CSS Clock
 + Transforms
+
+## 03 : Updating CSS variables
++ CSS variables
