@@ -10,3 +10,6 @@
 
 ## 03 : Updating CSS variables
 + CSS variables
+
+## 04 : Array Cardio
++ Javascript array functions
