@@ -12,7 +12,14 @@
 + CSS variables
 
 ## 04 : Array Cardio
-+ Javascript array functions
++ Javascript array methods
 
 ## 05 : Flexbox panels
 + Flexbox transitions
+
+## 06 : AJAX Look Forward
++ Promises
++ AJAX fetch
+
+## 07 : Array Cardio 2
++ More array methods
