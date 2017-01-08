@@ -1,0 +1,11 @@
+Day 7 saw the return of the array cardio!!! I was kind of looking forward to this as the previous one made me realise the power of Array methods & I was keen to learn some more. There were much fewer questions on this day so I quickly worked through them, learning about the .some(), .all(), .find() & .findINdex() methods in the process. This was a pretty easy one so I'll quickly summarise the methods I learned below:
+
+.some() : The .some() method loops passes each element of an array to a callback function. If any of the elements cause this function to return true then the .some() method also returns true.
+
+.all() : The .all() method behaves very similarly to the .some() method, however it only returns true if ALL the array elements satisfy the callback function.
+
+.find() : The .find() function loops through an array and returns the elements that cause the supplied callback to return true. If a single element is found then it is returned, whereas an array is used if multiple elements satisfy the conditions.
+
+.findIndex() : This method behaves very similarly to .find() but only returns the index(es) of the elements that satisfy the callback. This can be useful for determining elements to delete etc.
+
+While there were fewer methods covered in todays challenge, I can definitely see their usefulness. Using ES6 arrow functions, it is easy to create powerful one-line solutions to problems that would require several lines of a for loop.
