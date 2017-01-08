@@ -1,0 +1,5 @@
++ Canvas contexts
++ Drawing logic, flags on events etc.
++ Opportunity for creating 'pen' objects with different properties.
+
+Now this is where the challenge kicks in! I have used HTML5 canvas before for games and website backgrounds, however I have always used additional frameworks (such as !!!!PIXI!!!!!) to assist me with this. A vanilla Javascript canvas app would definitely flag up some areas that I definitely need to read up on!

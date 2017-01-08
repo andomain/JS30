@@ -23,3 +23,6 @@
 
 ## 07 : Array Cardio 2
 + More array methods
+
+## 08 : HTML5 Canvas
++ Canvas
