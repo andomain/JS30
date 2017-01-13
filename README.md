@@ -35,3 +35,6 @@
 
 ## 11 : Custom video
 + Custom video elements
+
+## 12 : Konami Code
++ Key sequence detection
