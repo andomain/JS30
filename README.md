@@ -26,3 +26,9 @@
 
 ## 08 : HTML5 Canvas
 + Canvas
+
+## 09 : Console tricks
++ No solution
+
+## 10 : Check boxes
++ Multiple selections
