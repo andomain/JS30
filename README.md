@@ -38,3 +38,6 @@
 
 ## 12 : Konami Code
 + Key sequence detection
+
+## 12 : Sliding images
++ Window positioning
