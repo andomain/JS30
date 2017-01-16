@@ -41,3 +41,9 @@
 
 ## 12 : Sliding images
 + Window positioning
+
+## 14 : Copies & Arrays
++ No solution
+
+## 15 : Tapas Menu
++ Using Local Storage
