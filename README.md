@@ -47,3 +47,6 @@
 
 ## 15 : Tapas Menu
 + Using Local Storage
+
+## 16 : CSS Mouse shadow
++ Mouse positioning
