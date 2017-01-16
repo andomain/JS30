@@ -53,3 +53,6 @@
 
 ## 17 : Sorting Without Articles
 + Sorting
+
+## 18 : Calculating time
++ Array reduction
