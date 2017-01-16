@@ -12,10 +12,6 @@ const bands = ['The Plot in You',
                 'Anywhere But Here',
                 'An Old Dog'];
 
-const articles =['The', 'A', 'An'];
-
-const list = document.querySelector('#bands');
-
 //  MY SOLUTION
 // function stripArticle(bandName){
 //   const words = bandName.split(' ');
@@ -33,7 +29,7 @@ function stripArticle(bandName){
 
 const compareFunction = (a,b) => (stripArticle(a) < stripArticle(b) ? -1 : 1);
 
-list.innerHTML = bands.sort(compareFunction).map((band) => {
+document.querySelector('#bands').innerHTML = bands.sort(compareFunction).map((band) => {
   return `
     <li>
       <a href="#">${band}</a>
