@@ -56,3 +56,7 @@
 
 ## 18 : Calculating time
 + Array reduction
+
+## 19 : Webcam Fun
++ Accessing User Media
++ Manipulating image data
