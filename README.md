@@ -50,3 +50,6 @@
 
 ## 16 : CSS Mouse shadow
 + Mouse positioning
+
+## 17 : Sorting Without Articles
++ Sorting
