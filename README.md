@@ -60,3 +60,12 @@
 ## 19 : Webcam Fun
 + Accessing User Media
 + Manipulating image data
+
+## 20 : Voice Recognition
++ Native voice recognition
+
+## 21 : Geolocation (Mobile only)
++ Navigator
+
+## 22 : Follow links
++ Bounding Client Rectangles
