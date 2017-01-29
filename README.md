@@ -69,3 +69,31 @@
 
 ## 22 : Follow links
 + Bounding Client Rectangles
+
+## 23 : Speech Synthesis
++ Native text to speech synthesis
+
+## 24 : Sticky Nav
++ Body classes
++ Fixed positioning
+
+## 25 : Event Propagation
++ Event capture
++ Event bubbling
++ 'once'
+
+## 26 : Navbar Follow Links
++ Bounding Client Rectangle
+
+## 27 : Draggable Scroll
++ Scolling properties
++ Relative mouse positions
+
+## 28 : Video Playback Speed
++ Video Playback Rate
+
+## 29 : Countdown
++ Intervals
++ Time
+
+## 30 : Whack a Mole Game
